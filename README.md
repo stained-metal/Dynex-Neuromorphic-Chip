@@ -82,7 +82,7 @@ transformed_barthel_n_100000_r_8.000_p0_0.080_instance_020.cnf    15 minutes    
 transformed_barthel_n_100000_r_8.000_p0_0.080_instance_024.cnf    15 minutes       no solution          17.73s (62 steps*)
 ```
 
-Comparison with PalSat [https://github.com/arminbiere/yalsat] on 3 CPU cores (-t 8) and Dynex on 8 CPU cores (-w 8)
+Comparison with PalSat [https://github.com/arminbiere/yalsat] on 8 CPU cores (-t 8) and Dynex on 8 CPU cores (-w 8)
 
 ```
 PROBLEM INSTANCE                                                  Max.Walltime     PalSAT 8 Cores       Dynex 8 Cores
