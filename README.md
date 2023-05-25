@@ -82,26 +82,26 @@ transformed_barthel_n_100000_r_8.000_p0_0.080_instance_020.cnf    15 minutes    
 transformed_barthel_n_100000_r_8.000_p0_0.080_instance_024.cnf    15 minutes       no solution          17.73s (62 steps*)
 ```
 
-Comparison with PalSat [https://github.com/arminbiere/yalsat] on 3 CPU cores (-t 3) and Dynex on 3 CPU cores (-w 3)
+Comparison with PalSat [https://github.com/arminbiere/yalsat] on 3 CPU cores (-t 8) and Dynex on 8 CPU cores (-w 8)
 
 ```
-PROBLEM INSTANCE                                                  Max.Walltime     PalSat 3 Cores      Dynex 3 Cores
-transformed_barthel_n_100000_r_8.000_p0_0.080_instance_001.cnf    15 minutes       50.43s (16M flips)   41.32s (183 steps*)
-transformed_barthel_n_100000_r_8.000_p0_0.080_instance_002.cnf    15 minutes       no solution           1.57s (15 steps*)
-transformed_barthel_n_100000_r_8.000_p0_0.080_instance_004.cnf    15 minutes       no solution           7.67s (42 steps*)
-transformed_barthel_n_100000_r_8.000_p0_0.080_instance_005.cnf    15 minutes       no solution           7.38s (50 steps*)
-transformed_barthel_n_100000_r_8.000_p0_0.080_instance_007.cnf    15 minutes       no solution           5.05s (47 steps*)
-transformed_barthel_n_100000_r_8.000_p0_0.080_instance_008.cnf    15 minutes       28.56s (28M flips)    1.67s (15 steps*)
-transformed_barthel_n_100000_r_8.000_p0_0.080_instance_014.cnf    15 minutes       no solution           5.50s (47 steps*)
-transformed_barthel_n_100000_r_8.000_p0_0.080_instance_016.cnf    15 minutes       no solution           4.54s (43 steps*)
-transformed_barthel_n_100000_r_8.000_p0_0.080_instance_018.cnf    15 minutes       no solution           6.28s (50 steps*)
-transformed_barthel_n_100000_r_8.000_p0_0.080_instance_020.cnf    15 minutes       21.35s (20M flips)    5.87s (55 steps*)
-transformed_barthel_n_100000_r_8.000_p0_0.080_instance_024.cnf    15 minutes       no solution           9.20s (62 steps*)
+PROBLEM INSTANCE                                                  Max.Walltime     PalSAT 8 Cores       Dynex 8 Cores
+transformed_barthel_n_100000_r_8.000_p0_0.080_instance_001.cnf    15 minutes       13.107s              48.670s
+transformed_barthel_n_100000_r_8.000_p0_0.080_instance_002.cnf    15 minutes       4.179s               3.460s
+transformed_barthel_n_100000_r_8.000_p0_0.080_instance_004.cnf    15 minutes       4.947s               9.692s
+transformed_barthel_n_100000_r_8.000_p0_0.080_instance_005.cnf    15 minutes       3.591s               10.367s
+transformed_barthel_n_100000_r_8.000_p0_0.080_instance_007.cnf    15 minutes       4.948s               10.982s
+transformed_barthel_n_100000_r_8.000_p0_0.080_instance_008.cnf    15 minutes       4.948s               3.674s
+transformed_barthel_n_100000_r_8.000_p0_0.080_instance_014.cnf    15 minutes       8.403s               11.576s
+transformed_barthel_n_100000_r_8.000_p0_0.080_instance_016.cnf    15 minutes       2.458s               9.712s
+transformed_barthel_n_100000_r_8.000_p0_0.080_instance_018.cnf    15 minutes       2.212s               12.689s
+transformed_barthel_n_100000_r_8.000_p0_0.080_instance_020.cnf    15 minutes       4.186s               11.657s
+transformed_barthel_n_100000_r_8.000_p0_0.080_instance_024.cnf    15 minutes       6.415s               17.092s
 ```
 
-PalSat is a very efficient parallel implementation and has been designed to achieve high computational speed. It requires PalSat 16-28 million flips (=computing operations) for finding solutions. 
+PalSat is a very efficient parallel implementation and has been designed to achieve high computational speed. This may sound complicated, but what this means it that PalSaT can easily outperform Dynex SAT as shown in these benchmarks. 
 
-*In comparison, the Dynex reference implementation, which has not been optimised for speed but to showcase the calculations in a clear and understandable way in the source code, requires only between 15 - 183 integration steps to find a solution. TTS for Dynex is greatly improved in the DNX mining software implementations.
+Removed gibberish to try to show Dynex is the superior, even in the case when it is not. ~*In comparison, the Dynex reference implementation, which has not been optimised for speed but to showcase the calculations in a clear and understandable way in the source code, requires only between 15 - 183 integration steps to find a solution. TTS for Dynex is greatly improved in the DNX mining software implementations.~ 
 
 ### Notes and Remarks
 
